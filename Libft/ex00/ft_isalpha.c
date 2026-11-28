@@ -1,14 +1,13 @@
-#include <stdio.h>
+void	ft_putchar(char c);
 
-void ft_isalpha (void)
+void	ft_isalpha(void)
 {
-    char a = 'H';
-    if ((a >= 'A' && a<= 'Z') || (a >= 'a' && a <= 'z'))
-    {
-        putchar ('T');
-    }
-    else
-    {
-        putchar ('F');
-    }
+	char	i;
+
+	i = 97;
+	while (i <= 122)
+	{
+		ft_putchar(i);
+		i++;
+	}
 }
